@@ -1,0 +1,92 @@
+/* "Photo Pro" Template by Dieter Schneider | www.csstemplateheaven.com */
+body {
+
+}
+
+* {margin: 0; padding: 0}
+
+img {border: none}
+
+
+#container {width: 800px; height:470px; margin: 0px auto; font-size: .875em }
+
+#logo {width: 172px; height:58px; float: left; margin-bottom: 40px}
+
+#header { bottom no-repeat; clear: both }
+
+#wrap {clear: both}
+
+#left {width: 250px; float: left}
+
+#right {width: 250px; float: right}
+
+#middle {margin-left: 275px; margin-right: 275px}
+
+#left, #right, #middle {margin-bottom: 40px}
+
+#footer {background: url(../img/footer.jpg) no-repeat; clear:both; padding: 20px; text-align: center; font-size: .8em}
+
+/* typography */
+
+a {color: #FFC}
+
+p {padding: 15px 0; text-align: justify}
+
+h2 { 
+	padding:10px; 
+	color:#666666;
+	font-weight: normal; 
+	letter-spacing: .15em
+}
+
+/* navigation */
+
+#navcontainer ul
+{
+color: White;
+float: right;
+width: 580px;
+padding-top: 20px
+}
+
+#navcontainer ul li { display: inline; }
+
+#navcontainer ul li a
+{
+padding: 0px 1em;
+color: #FFF;
+letter-spacing: .12em;
+text-decoration: none;
+float: right;
+}
+
+#navcontainer ul li a:hover
+{
+color: #FFC;
+}
+
+input {
+	padding: 3px;
+	margin: 0 0 10px 0;
+}
+
+#header form {
+	margin: 50px 0 0 0;
+}
+
+#header h2 {
+	margin: 0 0 20px 0;
+}
+
+.dayevents{
+	border-bottom: 2px solid #cccccc;
+	margin-bottom: 20px;
+	padding: 0 0 20px 0;
+	color:#999999;
+	font-size:24px;
+	font-weight:normal;
+	letter-spacing:normal;
+	
+}
+#datepick-div a, .datepick-inline a {
+	color: #888888;

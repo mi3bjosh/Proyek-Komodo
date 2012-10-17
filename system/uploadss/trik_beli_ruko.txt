@@ -1,0 +1,18 @@
+Trik:
+
+Modal 50 juta
+Harga 1,2 M -> Murah 800 juta
+Harga Beli 525 juta
+
+requirement:
+- bank
+	- marketing
+	- pimpinan bank
+- penjual
+
+
+PENJUAL RUKO
+- BRAPA SEWA 1200 M??
+- BRAPA HARGA RUKO 1,2 M??
+
+Bank BCA

@@ -1,0 +1,5 @@
+<graph caption='Grafik User E-Learning POLINEMA' showNames='1' xAxisName='Data Statistik' decimalPrecision='0' formatNumberScale='0'>
+    <set name='Admin' 	  value='10' color='F6BD0F'/>
+	<set name='Mahasiswa' value='70' color='8BBA00'/>
+	<set name='Dosen' 	  value='56' color='008E8E'/>
+</graph>

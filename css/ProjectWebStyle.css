@@ -1,0 +1,233 @@
+#carbonForm{
+	/* The main form container */
+	/*background-color:#1C1C1C;*/
+	border:1px solid #080808;
+	margin:20px auto;
+	padding:20px;
+	width:500px;
+	
+	/*-moz-box-shadow:0 0 1px #444 inset;
+	-webkit-box-shadow:0 0 1px #444 inset;
+	box-shadow:0 0 1px #444 inset;*/
+}
+
+#carbonForm h1{
+	/* The form heading */
+	font-family:"Century Gothic", "Myriad Pro", Arial, Helvetica, sans-serif;
+	font-size:50px;
+	font-weight:normal;
+	padding:0 0 30px 10px;
+	text-align:left;
+	color: #eee;
+}
+
+.fieldContainer{
+	/* The light rounded section, which contans the fields */
+	background-color:#1E1E1E;
+	border:1px solid #0E0E0E;
+	padding:30px 10px;
+	
+	/* CSS3 box shadow, used as an inner glow */
+	/*-moz-box-shadow:0 0 20px #292929 inset;
+	-webkit-box-shadow:0 0 20px #292929 inset;
+	box-shadow:0 0 20px #292929 inset;*/
+}
+
+.fieldContainer1{
+	/* The light rounded section, which contans the fields */
+	background-color:#1E1E1E;
+	border:1px solid #0E0E0E;
+	
+	/* CSS3 box shadow, used as an inner glow */
+	/*-moz-box-shadow:0 0 20px #292929 inset;
+	-webkit-box-shadow:0 0 20px #292929 inset;
+	box-shadow:0 0 20px #292929 inset;*/
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.listdonlot{
+	/* The light rounded section, which contans the fields */
+	background-color:aqua;
+	border:1px solid #0E0E0E;
+	
+	/* CSS3 box shadow, used as an inner glow */
+	/*-moz-box-shadow:0 0 20px #292929 inset;
+	-webkit-box-shadow:0 0 20px #292929 inset;
+	box-shadow:0 0 20px #292929 inset;*/
+	padding-top: 20px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+}
+
+#carbonForm,.listdonlot,.fieldContainer,.fieldContainer1,.errorTip{
+	/* Rounding the divs at once */
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+}
+
+
+.formRow{
+	height:35px;
+	padding:10px;
+	position:relative;
+}
+
+.formRow1{
+	height:35px;
+	position:relative;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.label{
+	float:left;
+	padding:0 20px 0 0;
+	text-align:right;
+	width:100px;
+}
+
+label{
+	font-family:"Century Gothic", "Myriad Pro", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	letter-spacing:1px;
+	line-height:35px;
+	color: #eee;
+}
+
+.label1{
+	float:left;
+	padding:0 10px 0 0;
+	text-align:right;
+	width:120px;
+}
+
+label1{
+	font-family:"Century Gothic", "Myriad Pro", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	letter-spacing:1px;
+	line-height:35px;
+	color: #eee;
+}
+
+.field{
+	float:left;
+}
+
+.field input{
+	/* The text boxes */
+	border:1px solid white;
+	color:#666666;
+	font-family:"Century Gothic", "Myriad Pro", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	padding:5px 4px;
+	outline:none; /* Preventing the default Safari and Chrome text box highlight */
+}
+
+.signupButton{
+	/* The submit button container */
+	text-align:center;
+	padding:30px 0 10px;
+	color: #333333;
+}
+
+#submit{
+	/* The submit button */
+	border:1px solid #f4f4f4;
+	cursor:pointer;
+	height:40px;
+	text-transform:uppercase;
+	width:100px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	color: #333333;
+	background-color: #00FF66;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#submit.active{
+	color: #333333;
+}
+
+#submit:hover{
+	background-color:#00FF66;
+	border:1px solid white;
+}
+
+input:hover,
+input:focus{
+	-moz-box-shadow:0 0 8px lightblue;
+	-webkit-box-shadow:0 0 8px lightblue;
+	box-shadow:0 0 8px lightblue;
+}
+
+.errorTip{
+	background-color:#970F08;
+	color:white;
+	font-size:10px;
+	height:26px;
+	letter-spacing:0.4px;
+	margin-left:20px;
+	padding:5px 0 5px 10px;
+	position:absolute;
+	text-shadow:1px 1px 0 #555555;
+	width:200px;
+	right:-130px;
+}
+
+
+/* The styles below are only necessary for the styling of the demo page: */
+
+#footer{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	padding:10px;
+	color:#eee;
+	text-align:center;
+	font-weight:normal;
+	font-style:italic;
+}
+
+a img{
+	border:none;
+}
+.heder {
+	/* The form heading */
+	font-family:"Century Gothic", "Myriad Pro", Arial, Helvetica, sans-serif;
+	font-size:50px;
+	font-weight:normal;
+	padding:0 0 30px 10px;
+	text-align:left;
+	color: #00FF66;
+}
+.regis_lbl {
+	color: #dcf2ff;
+	font-size: 20px;
+}
+.field select {
+	/* The text boxes */
+	border:1px solid white;
+	color:#666666;
+	font-family:"Century Gothic", "Myriad Pro", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	padding:4px 5px;
+	outline:none; /* Preventing the default Safari and Chrome text box highlight */
+}
+.signinButton {
+	/* The submit button container */
+	text-align:right;
+	padding:30px 0 10px;
+	color: #333333;
+}a {
+	color: #009900;
+	text-decoration: none;
+}

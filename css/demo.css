@@ -1,0 +1,56 @@
+.CB{clear:both;}
+#wrap{width:910px; margin:auto;}
+/* Demo 02 */
+/*
+MENU | Icon Size : 128px x 128px 
+*/
+
+.navigation02{ 
+background-image:url(../images/bgNavDiv.png);
+background-repeat:no-repeat;
+background-position:center bottom; 
+width:100%;
+ 	position: fixed;
+    margin: 0px;
+    padding: 0px;
+	bottom:0px;
+	text-align:center;
+   /* top: 500px;*/
+}
+
+#navDemo02{ 
+text-align:center;
+width:448px;
+height:143px; /*max height depend of max size icon (mouseOver) and size of navActive Background. ex: 128px+15px = 143px */
+margin:0 auto;
+background-image:url(../images/bgMenu.png);
+background-repeat:repeat-x;
+background-position:0 bottom;
+}
+
+
+#navDemo02 li{
+*float:left; /*IE 7 Hack with Float + Margin-Top */
+
+}
+
+#navDemo02 li.navActive a{ background-image:url(../images/navActive.png); background-repeat:no-repeat; background-position:center bottom; }
+#navDemo02 li a{
+position:relative;
+ display:block;
+float:left;
+ width:64px; /* size of the icon when mouse is out */
+ height:64px; /* size of the icon when mouse is out */
+ margin-top:64px; /*result of (iconSize_Over - iconSize_Out) => ex : 128px - 64px = 64px*/
+padding-bottom:15px; /* to display the navActive Background */
+text-decoration:none;
+}
+#navDemo02 li a img{ width:100%;}
+
+/*TIPS */
+#navDemo02 li span.tips{position: absolute; display:block; top:10px; left:70px; padding:5px; 
+-moz-border-radius:10px 10px 10px 10px;
+-moz-box-shadow:#576f94 0px 0px 2px;
+border:1px solid #3FA5F8; background-color:#F0F0F0; color:#448ab0; text-decoration:none; font-weight:bold;
+
+ }
