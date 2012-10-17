@@ -1,7 +1,7 @@
 <?php
 
 class Login extends Controller {
-	
+	aaaaaa
 	function index()
 	{
 		$data['main_content'] = 'login_form';
