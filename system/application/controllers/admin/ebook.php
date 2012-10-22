@@ -22,8 +22,7 @@ class Ebook extends Controller {
 	$data['content'] = 'tampil_ebook';
 	$this->load->view('admin/layout.php', $data);
 	}
-	tag cobak rek.
-
+	
 	function tambah_ebook()
 	{
 	$config['upload_path'] = 'uploads/'; 
