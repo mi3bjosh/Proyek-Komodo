@@ -131,7 +131,7 @@ $(function(){
 			<fieldset>
 
 				<legend>ShoutInfo:</legend>
-				Name:<input type="text" name="name" />
+				Name:<input type="text" name="name" /><br>
 				What to Shout?:<input type="text" name="shout" />
 				Email:<input type="text" name="email" />
 				<input type="submit" value="submit" name="submit" />
