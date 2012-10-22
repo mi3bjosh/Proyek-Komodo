@@ -49,6 +49,26 @@ Class Tutorial extends Controller {
 			$data['content'] = 'tambah_tutorial';
 			$this->load->view('dosen/layout.php', $data);
 	}
+	function edit_tutorial($id = null) {
+			if($_POST == NULL) {
+				$this->load->model('m_artikel');
+				$data['hasil'] = $this->m_artikel->select($id);
+				$this->load->plugin('xinha_pi');
+				$data['xinha_java']= javascript_xinha(array('isi')); // this line for the xinha
+				$data['content'] = 'edit_tutorial';
+				$this->load->view('dosen/layout.php', $data);
+			}
+			else {
+				$this->load->model('m_artikel');
+				$this->m_artikel->edit($id);
+				redirect('dosen/tutorial/tampil_artikel');
+			}	
+	}
+	function delete_tutorial($id = null) {
+			$this->load->model('m_artikel');
+			$this->m_artikel->delete($id);
+			redirect('dosen/tutorial');
+	}
 	
 }
 
