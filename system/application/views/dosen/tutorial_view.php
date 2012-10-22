@@ -14,6 +14,9 @@ foreach($hasil->result() as $row) :
 	<td> <?php echo $i; ?> </td>
 	<td> <?php echo $row->judul; ?> </td>
 	<td> <?php echo $row->tgl; ?> </td>
+	<td> <?php echo anchor('dosen/tutorial/edit_tutorial/'.$row->id, 'Edit'); ?> </td>
+	<td> <?php echo anchor('dosen/tutorial/delete_tutorial/'.$row->id, 'Hapus'); ?> </td>
+
 </tr>
 <?php 
 $i++;
