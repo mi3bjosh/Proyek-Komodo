@@ -9,7 +9,7 @@ PERMITTED USE
 You are permitted to use, copy, modify, and distribute the Software and its
 documentation, with or without modification, for any purpose, provided that
 the following conditions are met:
-
+0. helmi
 1. A copy of this license agreement must be included with the distribution.
 
 2. Redistributions of source code must retain the above copyright notice in
