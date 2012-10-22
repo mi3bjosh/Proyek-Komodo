@@ -128,15 +128,34 @@ $(function(){
 		<p><b>Submit your own SHOUT!!</b></p>
 		
         <form action="<?php echo base_url()."index.php/"; ?>shout/shout_input" method="post">
-			<fieldset>
-
-				<legend>ShoutInfo:</legend>
-				Name:<input type="text" name="name" />
-				What to Shout?:<input type="text" name="shout" />
-				Email:<input type="text" name="email" />
-				<input type="submit" value="submit" name="submit" />
-
-			</fieldset>
+		    <fieldset>
+            	<legend>ShoutInfo:</legend>
+                <table>
+                	<tr>
+                    <td>Name</td>
+                    <td>:</td>
+                    <td><input type="text" name="name" /></td>
+                    </tr>
+                    
+                    <tr>
+                    <td>What to Shout?</td>
+                    <td>:</td>
+                    <td><input type="text" name="shout"  /></td>
+                    </tr>
+                    
+                     <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="text" name="email" /></td>
+                    </tr>
+                    
+                    <tr>
+                    <td colspan="2"><input type="submit" value="submit" name="submit" /></td>
+                    </tr>
+                
+                </table>
+            
+            </fieldset>
 		</form>
 		<p><br />Page rendered in {elapsed_time} seconds</p>
           <!--fourm end div-->
