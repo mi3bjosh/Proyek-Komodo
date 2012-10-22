@@ -213,7 +213,7 @@ echo form_open('shouts/create'); ?>
 	</tr>
 
 	<tr>
-	<label for="email"><p>What to Shout? </p></label></tr>
+	<label for="email"><p>What to Shout? </p></label></tr><br>
 	<tr>
     <textarea name="message" rows="5" cols="10"><?php set_value('message') ?></textarea>
     </tr>
