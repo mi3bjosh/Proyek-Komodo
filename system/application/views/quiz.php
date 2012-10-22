@@ -49,8 +49,9 @@ $(function(){
           <li><?php echo anchor('elearning/project', 'Project'); ?></li>
           <li><?php echo anchor('elearning/artikel', 'Tutorial'); ?></li>
           <li><?php echo anchor('elearning/forum', 'Forum'); ?></li>
+	<li><?php echo anchor('elearning/quiz', 'Soal'); ?></li>
           <li><?php echo anchor('elearning/video', 'Video'); ?></li>
-          <li><?php echo anchor('elearning/quiz', 'Quiz'); ?></li>
+          
       </ul>    	
     </div> <!-- end of templatemo_menu -->
     
