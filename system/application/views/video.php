@@ -138,6 +138,7 @@ $(function(){
             <h3><?php echo "Video Pembelajaran" ?></h3>
 	
 			<br />	
+			<br /> * Untuk mengakses harus terkoneksi dengan internet terlebih dahulu <br>
   			<div id="content">Loading...</div>
 
           
