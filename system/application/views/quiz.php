@@ -106,7 +106,7 @@ $(function(){
  	<div align="justify" style="padding-right:20px;">
     <?php
     echo ("<br />");
-  echo validation_errors();
+  
   echo ("<table>");
   echo form_open('latihan_soal/pilihan_ganda');
   echo ("<tr><td><b>Masukkan Nama Anda </b></td><td>:</td><td><input type='text' name='vnama' size='20' class='ma'></td>");
@@ -115,38 +115,8 @@ $(function(){
   echo ("<input type='button' value='Cancel' onclick='window.back()' class='btn'></td></tr>");
   echo form_close();
   echo ("</table>"); 
-  
-  echo "<br /><div align='center'><h3> Top Five Quiz Siapa Berani </h3></div>";
- //$query="select nama,nilai,tanggal_test,waktu from user order by nilai desc limit 5";
- //$hasil=$this->db->query("$query");
- $no=1;
- $i=0; $t=0;
-	if($t == 1)
-		{
-			$t=0;
-			$r="#CCCCCC";
-		}
-	else
-		{
-			$t=1;
-			$r="#FFFFFF";
-		}
- echo "<div align='center'><table width='80%' align='center' class='top'>";
- echo "<th>Top</th><th>Nama</th><th>Tanggal Test</th><th>Score</th><th>Waktu Pengerjaan</th>";
- $i=0; $t=0; foreach ($select as $row)
- {  
- $i++;  
-     echo "<tr bgcolor='$r'><td align='center'>$no</td>";
-     echo "<td>$row->nama</td>";
-     
-     echo "<td>$row->tanggal_test</td>";
-	 echo "<td>$row->nilai</td>";
-     echo "<td>$row->waktu</td></tr>";
-     $no++;
-     if ($no==11)
-       { exit; }
- }
- echo "</table></div>";  ?>
+  echo validation_errors();
+ ?>
  	    
      </div>
      <p align="justify">&nbsp;</p>
