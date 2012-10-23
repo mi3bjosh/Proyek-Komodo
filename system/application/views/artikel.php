@@ -71,10 +71,10 @@ $(function(){
         <ul class="slider_new" >
 		<li >
         
-        	<h2>Tutorial Login on HTML5</h2>
-            <p>In this tutorial we use a plain text editor (like Notepad) to edit HTML. We believe this is the best way to learn HTML....... </p>
+        	<<h2>Membuat Login Multiple User dengan PHP</h2>
+            <p>Pada tutorial ini kita menggunakan text editor biasa, seperti Notepad. Kami yakin bahwa ini adalah cara termudah untuk belajar membuat login...  </p>
             <div class="cleaner_h10"></div>
-            <div class="button_01"><a href="#">More</a></div>
+            <div class="button_01"><a href="#">Read More</a></div>
          
         </li>
         	<li>
