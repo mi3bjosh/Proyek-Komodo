@@ -30,6 +30,14 @@
 	<td colspan="2">Jawaban : <?php echo $row->jawab; ?></td>
 </tr>
 <tr>
+	<td>&nbsp;</td>
+	<td colspan="2">
+	<a href="<?php echo site_url();?>/dosen/soals/edit_soal/<?php echo $row->no; ?>">Edit<a>  |   
+	<a href="<?php echo site_url();?>/dosen/soals/hapus_soal/<?php echo $row->no; ?>">Hapus<a>
+	</td>
+</tr>
+
+<tr>
 	<td colspan="3">&nbsp;</td>
 </tr>
 <?php endforeach; ?>
