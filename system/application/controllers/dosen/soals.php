@@ -53,5 +53,44 @@ class Soals extends Controller {
 		$data['content'] = 'tambah_soal';
 		$this->load->view('dosen/layout.php', $data);
 	}
+	
+	function hapus_soal($no) 
+	{
+		$data['query']= $this->soal_model->delete_soal($no);
+   	
+		redirect ('dosen/soals');
+	
+	}
+	
+	function edit_soal(){
+		$no=$this->uri->segment(4);
+		$data['query'] = $this->soal_model->update($no);
+		$data['content'] = 'edit_soal';
+		$this->load->view('dosen/soal_edit.php', $data);
+	}
+	
+	
+	function update()
+	{
+		$no = $this->input->post('no');
+		$pertanyaan = $this->input->post('pertanyaan');
+		$opt1 = $this->input->post('opt1');
+		$opt2 = $this->input->post('opt2');
+		$opt3 = $this->input->post('opt3');
+		$opt4 = $this->input->post('opt4');
+		$jawab = $this->input->post('jawab');
+   		
+		$this->db->where('no', $no);
+		$this->db->set('pertanyaan',$pertanyaan); 
+		$this->db->set('opt1',$opt1);
+		$this->db->set('opt2',$opt2);
+		$this->db->set('opt3',$opt3);
+		$this->db->set('opt4',$opt4);
+		$this->db->set('jawab',$jawab);
+		$this->db->update('soal');
+		
+		redirect ('dosen/soals');		
+	}
+
 
 }
