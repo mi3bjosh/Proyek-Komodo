@@ -69,7 +69,7 @@ $(function(){
     </div> <!-- end of templatemo_menu -->
     
     
-    <div id="templatemo_admin_content_top">&nbsp;</div>
+    <div id="templatemo_dosen_content_top">&nbsp;</div>
     <div id="templatemo_content">
     
         <div class="section_w940">
