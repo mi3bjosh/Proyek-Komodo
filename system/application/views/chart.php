@@ -116,6 +116,13 @@ $(function(){
 		   chart.setDataURL("<?php echo base_url(); ?>Data/Column3D.xml");		   
 		   chart.render("chartdiv");
 		</script>
+    <div id="chartdiv2" align="center"> 
+        FusionCharts. </div>
+      <script type="text/javascript">
+		   var chart = new FusionCharts("<?php echo base_url(); ?>/Chart/FCF_Column3D2.swf", "ChartId", "600", "350");
+		   chart.setDataURL("<?php echo base_url(); ?>Data/Column3D2.xml");		   
+		   chart.render("chartdiv2");
+		</script>
         
 
           <!--fourm end div-->
