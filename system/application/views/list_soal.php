@@ -108,6 +108,7 @@ $(function(){
   </div>
   <b>Nama  Anda : <?=$znama;?></b>
   <hr />
+<div id="scroll">
 <? 
    $query="select * from soal order by no";
    $hasil=$this->db->query($query); 
@@ -125,6 +126,7 @@ $(function(){
    	  <? $arr[]=$no;
    	     $no++;  	   
     }
+echo ("</div>");
    echo ("</ol>");
    echo ("<input type='submit' value='Selesai' class='btn'>  ");
    echo ("<input type='button' value='Cancel' onclick='window.back()' class='btn'>");
