@@ -152,15 +152,73 @@ font-size:12px;
 		  </style>
 
 		<h1>Welcome to Shout Box!</h1>
-		<p>Recent shouts</p>
+		
+		
+		<p>
+		<form action="<?php echo base_url()."index.php/"; ?>shout/shout_input" method="post">
+			<fieldset>
+			
+			
+			<table>
+				<tr>
+					<td colspan="3"><legend>Insert New Topic</legend></td>
+				
+				</tr>
+				<tr>
+				<td>Name </td>
+				<td>:</td>
+				<td><input type="text" name="name" /></td>
+				</br>
+				</tr>
+				
+				<tr>
+				<td>Email</td>
+				<td>:</td>
+				<td><input type="text" name="email" /></td>
+				<br>
+				</tr>
+				
+				<tr>
+				<td>Topic</td>
+				<td>:</td>
+				<td><textarea id="isi" name="shout" ></textarea></td>
+				
+				</tr>
+				<tr>
+					<td colspan="3">
+				<input type="submit" value="submit" name="submit" /></td>
+				</tr>
+				</table>
+			</fieldset>
+		</form></p>
+		<p>Recent forum </br></p>
+		<?php //if ($query->num_rows()>0);?>
 		<?php 
 			//$this->load->Model('shoutmodel');
     		//$data['shout']=$this->shoutmodel->getshout();
 		
 			foreach($shout as $shout): 
 		?>
-			<code> <b><?php echo $shout->name.' says -';?></b><br><?php echo $shout->shout?></code>
+			<code> By  <b>
+			<?php echo $shout->name.' : ';?></b><br>
+			
+			<?php echo $shout->shout?>
+			<p>
+			
+			<?// =anchor('elearning/delete/'.$shout->id,'(x)');?>
+			<div id="read" align="right">
+			
+			<?=form_open('elearning/tamp');?>
+			<?=form_hidden('enty_id', $this->uri->segment(3));?>
+			
+			<?=anchor('elearning/baca/'.$shout->id,'masuk forum');?></p>
+			
+			</div>
+			</code>
+
 		<?php endforeach; ?>
+		
+		
 		<p>The corresponding controller for this page is found at:</p>
 		<code>system/application/controllers/shout.php</code>
 		<p><b>Submit your own SHOUT!!</b></p>
