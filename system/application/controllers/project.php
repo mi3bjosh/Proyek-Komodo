@@ -86,7 +86,7 @@ class Project extends Controller {
 										'prj' => $this->project_model->getProject(),
 										'count' => $this->project_model->countRows()
 									);
-						redirect('project/index',$data);
+						$this->load->view('upload_success', $data);
 					}
 				}
 			}
