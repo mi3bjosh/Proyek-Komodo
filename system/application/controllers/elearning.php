@@ -140,6 +140,29 @@ class Elearning extends Controller {
     	$this->load->view('forum',$data);
 	}
 	
+	function baca()
+	{
+	
+	$this->load->Model('shoutmodel');
+	
+	$this->db->where('enty_id', $this->uri->segment(3));
+	
+	$data['query']=$this->db->get('comments');
+	
+	
+	
+	$this->load->view('comments_view', $data);
+	}
+	
+	function comment_insert()
+	{
+	
+	$this->db->insert('comments', $_POST);
+	
+	redirect('elearning/baca/'.$_POST['enty_id']);
+	}
+	
+	
 	function project()
 	{
 		$this->load->Model('project_model');
