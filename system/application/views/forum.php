@@ -150,6 +150,9 @@ $(function(){
 				margin: 14px 0 14px 0;
 				padding: 12px 10px 12px 10px;
 			}
+		#shout{
+			overflow:auto;
+			height:400px;}
 		  </style>
 
 		<h1>Welcome to Shout Box!</h1>
