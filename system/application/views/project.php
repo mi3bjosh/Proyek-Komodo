@@ -118,7 +118,7 @@ $(function(){
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td height="20" align="right" valign="middle" class="postby">&nbsp;<?php echo 'posted by mr. tralala'.' at '.$p->tglpost; ?></td>
+    <td height="20" align="right" valign="middle" class="postby">&nbsp;<?php echo 'posted by '.$p->IdUser.' at '.$p->tglpost; ?></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
