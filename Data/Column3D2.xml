@@ -1,0 +1,14 @@
+<graph bgcolor='ffffff' caption='Grafik user pengguna akses elearning sesuai jurusan' subCaption='tahun 2007-2012' yaxismaxvalue="100" 
+yaxisminvalue='0' yaxisname='presentase' xaxisname='Jurusan' hovercapbg='FFFFDD' hovercapborder='000000' numdivlines='4' numberSuffix='%25'> 
+   <set name='MI' value='98' color='F6BD0F'/> 
+   <set name='Teknik Elektro' value='20' color='FF6600'/> 
+   <set name='AN' value='45' color='8BBA00' alpha='70'/> 
+   <set name='Akutansi' value='10' color='F984A1'/> 
+   <set name='Mesin' value='86' color='A66EDD' alpha='70'/>
+   <set name='Teknik Sipil' value='22' color='B2FF66'/> 
+   <set name='TI' value='35' color='AFD8F8'/> 
+<trendlines>
+   <line startvalue='70' displayValue='Good' color='FF0000' thickness='1' isTrendZone='0'/>
+   <line startvalue='30' displayValue='Bad' color='009999' thickness='1' isTrendZone='0'/>
+</trendlines>
+</graph>
