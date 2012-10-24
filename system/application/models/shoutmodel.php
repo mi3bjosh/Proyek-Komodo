@@ -14,6 +14,15 @@ return $data;
 }
 }
 
+function getcom(){
+$comments = $this->db->get('comments');
+if($comments->num_rows() > 0){foreach ($comments->result() as $shout){
+$data[] = $comments;
+}
+return $data;
+}
+}
+
 
 function newshout(){
 $name=$_POST["name"];
