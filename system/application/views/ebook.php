@@ -122,7 +122,7 @@ $(function(){
 
             <tr> 
             <td>
-            <?php echo anchor('EbookController/validatorShowEbook/'.$row->idebook.'', '> Read More...!'); ?>
+            <?php echo anchor('EbookController/validatorShowEbook/'.$row->idebook.'', '> Read More...!').$row->tgl; ?>
             </td>
             </tr>
 
