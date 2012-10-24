@@ -74,6 +74,21 @@ font-size:12px;
          
     });
 </script>
+
+<script>
+	function validateForm()
+	{
+	var x=document.forms["myForm"]["name"].value;
+	if (x==null || x=="")
+	  {
+	  alert("First name must be filled out");
+	  return false;
+	  }
+	}
+</script>
+
+
+
 </head>
 <body>
 <div id="templatemo_wrapper">	
