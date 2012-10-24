@@ -74,7 +74,7 @@ class Project extends Controller {
 						$jdl = $this->input->post('judul');
 						$idk = $this->input->post('kate');
 						$desc = $this->input->post('descript');
-						$idu = $this->session->userdata('userdata');
+						$idu = $this->session->userdata('firstname');
 						$con = 0;
 						$stat = 1;
 						$file = $this->upload->file_name;
