@@ -1,5 +1,23 @@
 <?php $this->load->view('includes/header'); ?>
+<style>
+a{
+   text-decoration:none;
+	border:1px inset #f4f4f4;
+	cursor:pointer;
+	width:80px;
+	padding:5px;
+	color: #FFF;
+	background-color: #F36;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+a:hover{
+	/* The submit button */
+	color: #FFF;
+	background-color:#F00;
+}
 
+</style>
 <h1>Buat Account Baru!</h1>
 <fieldset>
 <legend>Data Diri</legend>
@@ -20,7 +38,8 @@ echo form_input('username', set_value('username', 'Username'));
 echo form_input('password', set_value('password', 'Password'));
 echo form_input('password2', 'Password Confirm');
 
-echo form_submit('submit', 'Create Acccount');
+echo form_submit('submit', 'Create Acccount').
+anchor('elearning', 'Cancel');
 ?>
 
 <?php echo validation_errors('<p class="error">'); ?>
