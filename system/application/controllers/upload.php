@@ -16,7 +16,7 @@ class Upload extends Controller {
 	function do_upload()
 	{
 		$config['upload_path'] = './uploads/';
-		$config['allowed_types'] = 'gif|jpg|png|rar|zip|doc|java|txt|pdf';
+		$config['allowed_types'] = 'gif|jpg|png|rar|zip|doc|java|txt|pdf|xls';
 		$config['max_size']	= '500';
 		$config['max_width']  = '1024';
 		$config['max_height']  = '768';
