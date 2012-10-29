@@ -1,8 +1,19 @@
 <link href="<?php echo base_url(); ?>css/ListStyle.css" rel="stylesheet" type="text/css" />
+<script>
+function confirmDelete() {
+    var answer = confirm("Anda Yakin Menghapus Project Yang Anda Pilih?")
+    if (answer) {
+		return true;
+    }
+    else {
+		return false;
+    }
+}
+</script>
 <h1>Modul Project</h1>
 <table width="100%">
 <?php 
-foreach($hasil->result() as $p):?>
+foreach($hasil as $p):?>
 	<tr>
     	<td width="100">Judul</td>
         <td> : </td>
@@ -33,7 +44,7 @@ foreach($hasil->result() as $p):?>
 			  }
 	    	?> <-
             <?php echo anchor('admin/project/publish/'.$p->IdPW, 'Ubah Status'); ?> | 
-            <?php echo anchor('admin/project/delete_project/'.$p->IdPW, 'Hapus'); ?>
+            <?php echo anchor('admin/project/delete_project/'.$p->IdPW, 'Hapus'), "onClick = 'return confirmDelete()'"); ?>
 		</td>
     </tr>
   	<tr>
