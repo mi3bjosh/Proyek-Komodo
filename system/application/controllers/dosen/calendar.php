@@ -30,6 +30,13 @@ class Calendar extends Controller {
 	//$this->load->vars($data);
 	$this->load->view('dosen/template', $data); 
   }
+
+  function eventGetList()
+  {
+	$data['query']= $this->MCalendar->getEventList();
+	//$this->load->view('dosen/calendar_create_temp',$data); 
+	$this->load->view('dosen/calendar_events_view',$data);
+  }
   
   function dayevents ($day){
   		$data['dayevents']= $this->MCalendar->getDayEvents($day);
