@@ -12,7 +12,20 @@ class project_model extends Model {
 		return $query->result();
 	}
 	
-	function getlist(){
+	function getListAdmin() {
+		$this->load->library('pagination');
+		$config['base_url'] = base_url().'index.php/admin/project/viewproject';
+		$config['total_rows'] = $this->db->count_all('projectweb');
+		$config['per_page'] = 5;
+		$config['num_links'] = 20;
+		$config['uri_segment'] = 4;
+		$this->pagination->initialize($config);
+		$this->db->order_by("IdPW", "desc");
+		$q = $this->db->get('projectweb', $config['per_page'], $this->uri->segment(4));
+		return $q->result();
+	}
+	
+	function getList() {
 		$this->load->library('pagination');
 		$config['base_url'] = base_url().'index.php/elearning/project';
 		$config['total_rows'] = $this->db->count_all('projectweb');
