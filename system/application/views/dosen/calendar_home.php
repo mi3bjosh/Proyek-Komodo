@@ -103,7 +103,8 @@ if ($this->session->flashdata('message')){
 			</th>		
 		</tfoot>
 	</table>
-    <p><center><?php echo anchor('dosen/calendar/create', 'Tambah Event'); ?></center></p>
+    <p><center><?php echo anchor('dosen/calendar/create', 'Tambah Event'); ?></center>
+<center><?php echo anchor('dosen/calendar/eventGetList', 'Lihat List'); ?></center></p>
 </div>
 
 	
