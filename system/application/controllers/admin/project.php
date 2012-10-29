@@ -24,16 +24,8 @@ class Project extends Controller {
 
 	function viewproject()
 	{	
-		$this->load->library('pagination');
-		$config['base_url'] = base_url().'index.php/admin/project/viewproject';
-		$config['total_rows'] = $this->db->count_all('projectweb');
-		$config['per_page'] = 5;
-		$config['num_links'] = 20;
-		$config['uri_segment'] = 4;
-		$this->pagination->initialize($config);
 		$data['content'] = 'project_view';
-		$this->db->order_by("IdPW", "desc");
-		$data['hasil'] = $this->db->get('projectweb', $config['per_page'], $this->uri->segment(4));
+		$data['hasil'] = $this->project_model->getListAdmin();
 		$this->load->view('admin/layout.php', $data);
 	}
 	
