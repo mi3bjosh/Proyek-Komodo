@@ -6,6 +6,19 @@ class MCalendar extends Model{
 		parent::Model();
 	}
 
+	function getEventList()
+	{
+		$query = $this->db->get('eventcal');
+		if ($query->num_rows()>0)
+		{
+			foreach ($query->result() as $row)
+			{
+				$data[]=$row;
+			}
+			return $data;
+		}
+	}
+
 	function getEvents($time){
 		
 		$today = date("Y/n/j", time());
