@@ -171,6 +171,31 @@ class Elearning extends Controller {
 		//$this->load->view('project');
 	}
 	
+
+		function delete($id)
+	{
+		$this->load->Model('shoutmodel');
+		$this->shoutmodel->hapus($id);
+		redirect('elearning/forum');
+	}
+	function GetById($id){
+		$this->load->Model('shoutmodel');
+		$data['forumku']=$this->shoutmodel->GetId($id);
+		$this->load->view('forum_edit_view', $data);
+		
+	}
+	
+	
+	function forum_edit($id)
+	{
+			
+			$this->load->Model('shoutmodel');
+			$this->shoutmodel->edit($id);
+			redirect('elearning/forum');
+			
+	}
+		
+
 	function artikel()
 	{
 		$this->load->model('m_artikel');
