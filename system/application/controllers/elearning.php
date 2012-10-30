@@ -140,28 +140,28 @@ class Elearning extends Controller {
     	$this->load->view('forum',$data);
 	}
 	
-	function baca()
+	function delete($id)
 	{
-	
-	$this->load->Model('shoutmodel');
-	
-	$this->db->where('enty_id', $this->uri->segment(3));
-	
-	$data['query']=$this->db->get('comments');
-	
-	
-	
-	$this->load->view('comments_view', $data);
+		$this->load->Model('shoutmodel');
+		$this->shoutmodel->hapus($id);
+		redirect('elearning/forum');
+	}
+	function GetById($id){
+		$this->load->Model('shoutmodel');
+		$data['forumku']=$this->shoutmodel->GetId($id);
+		$this->load->view('forum_edit_view', $data);
+		
 	}
 	
-	function comment_insert()
+	
+	function forum_edit($id)
 	{
-	
-	$this->db->insert('comments', $_POST);
-	
-	redirect('elearning/baca/'.$_POST['enty_id']);
+			
+			$this->load->Model('shoutmodel');
+			$this->shoutmodel->edit($id);
+			redirect('elearning/forum');
+			
 	}
-	
 	
 	function project()
 	{
