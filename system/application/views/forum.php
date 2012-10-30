@@ -208,7 +208,7 @@ $(function(){
 			
 			<?php echo $shout->shout?>
 			<p>
-			
+			<?php echo anchor('elearning/GetById/'.$shout->id.'', 'Edit'); ?> </td>
 			<?// =anchor('elearning/delete/'.$shout->id,'(x)');?>
 			<div id="read" align="right">
 			
