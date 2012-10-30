@@ -16,10 +16,10 @@ class EbookController extends Controller {
         $this->load->library(array('pagination'));
     }
 
-    public function index($offset=0) {      
+      public function index($offset=0) {      
         $config['base_url']     = base_url().'index.php/EbookController/index';
         $config['total_rows']   = $this->db->count_all('ebook');
-        $config['per_page']     = 2;
+        $config['per_page']     = 5;
         $config['next_link']    = ' Before ';
         $config['prev_link']    = ' After ';
         $config['uri_segment']  = 3;
