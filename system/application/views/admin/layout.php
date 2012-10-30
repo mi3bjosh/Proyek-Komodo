@@ -66,6 +66,7 @@ $(function(){
 			<li ><?php echo anchor('admin/tutorial', 'Tutorial'); ?></li>
 			<li><?php echo anchor('admin/soals', 'Soal'); ?></li>
           <li><?php echo anchor('admin/project', 'Project'); ?></li>
+          <li><?php echo anchor('admin/membership', 'Membership'); ?></li>
       </ul>    	
     
     </div> <!-- end of templatemo_menu -->
